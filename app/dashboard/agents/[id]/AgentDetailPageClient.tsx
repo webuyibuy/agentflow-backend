@@ -3,7 +3,8 @@
 import type React from "react"
 import { useState, useEffect } from "react"
 import type { Agent } from "@/types/agent"
-import { getAgent } from "@/lib/api"
+// TODO: The following line is commented out because 'getAgent' is missing
+//import { getAgent } from "@/lib/api"
 import { Play, Loader2 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
@@ -20,8 +21,9 @@ const AgentDetailPageClient: React.FC<AgentDetailPageClientProps> = ({ agentId }
   useEffect(() => {
     const fetchAgent = async () => {
       try {
-        const fetchedAgent = await getAgent(agentId)
-        setAgent(fetchedAgent)
+        // TODO: The following line is commented out because 'getAgent' is missing
+        //const fetchedAgent = await getAgent(agentId)
+        setAgent(null)
       } catch (error) {
         console.error("Failed to fetch agent:", error)
       }
