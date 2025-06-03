@@ -1,3 +1,7 @@
+// This file is for CLIENT-SIDE Supabase usage only.
+// Do NOT use next/headers or cookies() here.
+// Use only in Client Components or shared code that runs on the client.
+// For server-side logic, use /lib/supabase/server.ts instead.
 import { createBrowserClient } from "@supabase/ssr"
 import type { SupabaseClient } from "@supabase/supabase-js"
 import { ConnectionManager } from "./connection-manager"

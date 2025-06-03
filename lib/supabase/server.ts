@@ -1,3 +1,8 @@
+// This file is for SERVER-SIDE Supabase usage only.
+// Uses next/headers and cookies().
+// Only import this in Server Components, Server Actions, or API routes in /app.
+// Do NOT import into Client Components or shared code that runs on the client.
+// For client-side logic, use /lib/supabase/client.ts instead.
 import { createServerClient, type CookieOptions } from "@supabase/ssr"
 import { createClient } from "@supabase/supabase-js"
 import { cookies } from "next/headers"
