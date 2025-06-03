@@ -1,3 +1,8 @@
+// WARNING: This file exports both client-safe and server-only functions.
+// - badges, getNextBadge, getCurrentBadge, POINTS_PER_TASK_COMPLETION are CLIENT-SAFE.
+// - awardXP, getUserXPData are SERVER-ONLY (use Supabase server logic, do NOT import in client components).
+// If you need to use XP logic in a client component, call an API route instead.
+
 import type React from "react"
 import { Award, Shield, Star, Zap, Crown } from "lucide-react"
 import { getSupabaseAdmin } from "@/lib/supabase/server"
