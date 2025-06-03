@@ -1,7 +1,8 @@
 "use client"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge as ShadBadge } from "@/components/ui/badge"
-import { type Badge as UserBadgeType, badges as allBadgesConfig, getNextBadge } from "@/lib/gamification"
+import { type Badge as UserBadgeType } from "@/lib/gamification-types"
+import { badges as allBadgesConfig, getNextBadge } from "@/lib/gamification-client"
 import { Check, Lock, Star } from "lucide-react"
 import { Progress } from "@/components/ui/progress"
 
