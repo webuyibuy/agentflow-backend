@@ -6,7 +6,8 @@ import ApiKeyManager from "@/components/api-key-manager"
 import ProfileSettingsForm from "@/components/profile-settings-form"
 import { Suspense } from "react"
 import BadgeShowcase from "@/components/badge-showcase"
-import { badges as allBadgesConfig, type Badge as UserBadgeType } from "@/lib/gamification"
+import { badges as allBadgesConfig } from "@/lib/gamification-client"
+import type { Badge as UserBadgeType } from "@/lib/gamification-types"
 
 export const metadata: Metadata = {
   title: "Settings - AgentFlow",

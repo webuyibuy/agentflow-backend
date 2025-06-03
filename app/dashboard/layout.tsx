@@ -1,7 +1,7 @@
 import DashboardLayoutClient from "@/components/dashboard-layout"
 import type React from "react"
 import { getSupabaseFromServer } from "@/lib/supabase/server"
-import type { Badge as UserBadgeType } from "@/lib/gamification"
+import type { Badge as UserBadgeType } from "@/lib/gamification-types"
 
 export default async function Layout({ children }: { children: React.ReactNode }) {
   const supabase = getSupabaseFromServer()
